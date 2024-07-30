@@ -9,12 +9,8 @@ export default function Navbar() {
             <li>Home</li>
             <li>Collection</li>
             <li>Cart</li>
+            <li>Sign Up</li>
         </ul>
-
-        <div className='seach-box'>
-            <input type="text" plaseholder='search'/>
-            <img src="" alt=""/>
-        </div>
 
         <img src="" alt="" className='logo'/>
      
