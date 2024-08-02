@@ -16,14 +16,12 @@ const Home = () => {
           <li><a href="#collection">Collection</a></li>
           <li><a href="#cart">Cart</a></li>
           <li><a href="#signup">SignUp</a></li>
+          <li><img src={logo_image} alt="Thishdress Logo" className="logo" /></li> 
         </ul>
-        <div className='image'>
-        <img src={logo_image} alt="Thishdress Logo" className="logo" />
-        </div>
       </div>
       <div className="text-container">
-        <h1>Trendy collection’s</h1>
-        <h2>HIGHEST QUALITY COLLECTION</h2>
+        <h2>Trendy collection’s</h2>
+        <h1>HIGHEST QUALITY COLLECTION</h1>
         <p>Reviews</p>
         <div className="review-circles">
           <div className="circle"></div>
