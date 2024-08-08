@@ -2,42 +2,47 @@
 
 
 
-.navbar{
+.navbar {
     display: flex;
     justify-content: space-around;
-    padding: 16px;  
-    box-shadow: 0 1px 3px -2px black;  
+    padding: 16px;
+    box-shadow: 0 1px 3px -2px black;
 }
-.nav-logo{
+
+.nav-logo {
     display: flex;
-    align-items:center ;
+    align-items: center;
     gap: 10px;
 }
-.logo{
-    width: 200px; 
-    height: 200px; 
+
+.logo {
+    width: 200px;
+    height: 200px;
 }
-.nav-menu{
+
+.nav-menu {
     display: flex;
     align-items: center;
     list-style: none;
-    gap:50px;
-    color:rgb(0, 0, 0);
+    gap: 50px;
+    color: rgb(0, 0, 0);
     font-size: 20px;
     font-weight: 500px;
     font-family: 'Oswald', sans-serif;
-    
+
 }
-.nav-menu li{
+
+.nav-menu li {
     position: relative;
     display: flex;
-    flex-direction: center;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap:3px;
+    gap: 3px;
     cursor: pointer;
 }
-.nav-menu hr{
+
+.nav-menu li hr {
     border: none;
     width: 100%;
     height: 3px;
@@ -45,31 +50,40 @@
     background: rgb(237, 4, 4);
     position: absolute;
     bottom: -5px;
+    transition: width 0.3s ease, left 0.3s ease;
 }
-.nav-login-cart{
+.nav-menu li.active hr {
+    width: 100%; 
+    left: 0; 
+}
+
+.nav-login-cart {
     display: flex;
     align-items: center;
-    gap:45px;
+    gap: 45px;
 
-} 
-.nav-login-cart button{
-    width:157px;
+}
+
+.nav-login-cart button {
+    width: 157px;
     height: 58px;
     outline: none;
     border: 2px solid rgb(255, 0, 195);
     border-radius: 75px;
-    color:bluevioletl;
+    color: bluevioletl;
     font-size: 20px;
     font-weight: 500px;
     background: white;
     cursor: pointer;
     font-family: 'Oswald', sans-serif;
 }
-.nav-login-cart button:active{
+
+.nav-login-cart button:active {
     background: rgb(224, 97, 195);
 
 }
-.nav-cart-count{
+
+.nav-cart-count {
     width: 22px;
     height: 22px;
     display: flex;
@@ -82,9 +96,9 @@
     background: red;
     color: white;
 }
-.cart-icon{
-    width: 30px; 
-    height: 30px; 
-    
-  }
-  
+
+.cart-icon {
+    width: 30px;
+    height: 30px;
+
+}
